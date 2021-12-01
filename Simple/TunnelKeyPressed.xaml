@@ -1,0 +1,33 @@
+﻿<Window x:Class="Demo.WPFLearning.Simple.TunnelLabelClick"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo.WPFLearning.Simple"
+        mc:Ignorable="d"
+        Title="TunnelLabelClick" Height="450" Width="400"  PreviewKeyDown="SomeKeyPressed"  KeyDown="SomeKeyPressed">
+    <Grid Margin="3" PreviewKeyDown="SomeKeyPressed">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition  Height="Auto"/>
+            <RowDefinition  Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Margin="5" Background="AliceBlue" BorderBrush="Black" BorderThickness="1" PreviewKeyDown="SomeKeyPressed"
+               HorizontalContentAlignment="Stretch">
+            <StackPanel PreviewKeyDown="SomeKeyPressed">
+                <TextBlock Margin="3"  HorizontalAlignment="Center">Image and text lable</TextBlock>
+                <Image Source="/Demo.WPFLearning;component\Assets\Image\happy.png"  PreviewKeyDown="SomeKeyPressed" Width="60" Height="60"/>
+                <DockPanel Margin="0,5,0,0" PreviewKeyDown="SomeKeyPressed">
+                    <TextBlock Margin="3"  PreviewKeyDown="SomeKeyPressed">Type here</TextBlock>
+                    <TextBox  PreviewKeyDown="SomeKeyPressed" KeyDown="SomeKeyPressed"/>
+                </DockPanel>
+                
+            </StackPanel>
+        </Label>
+
+        <ListBox Margin="5" Name="listMessages" Grid.Row="1" />
+        <CheckBox Margin="5" Grid.Row="2" Name="chkHandle">Handle first event</CheckBox>
+        <Button Grid.Row="3" HorizontalAlignment="Right" Margin="5" Padding="3" Click="ClearAll_Click">Clear List</Button>
+    </Grid>
+</Window>

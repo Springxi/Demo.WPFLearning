@@ -1,0 +1,19 @@
+﻿<Window x:Class="Demo.WPFLearning.Control.ControlFormat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo.WPFLearning.Control"
+        mc:Ignorable="d"
+        Title="ControlFormat" Height="450" Width="400" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel x:Name="stackPanel1">
+            <Button x:Name="button" Content="Button" FontFamily="Times New Roman,Arial" FontSize="28" FontStretch="Condensed"
+                   Cursor="Help" ></Button>
+            <ListBox x:Name="listBox" Margin="5,5,4.6,5" Height="169" ></ListBox>
+            <TextBlock x:Name="textBolck1" Text="TextBolock1" TextDecorations="OverLine" FontSize="28" FontFamily="../Assets/Font/#bayern" />
+            <TextBlock x:Name="textBolck2" Text="TextBolock2 : this is a text.Dispaly text is Ideal at small sizes "  FontSize="11"  />
+            <TextBlock x:Name="textBolck3" TextOptions.TextFormattingMode="Display" Text="TextBolock3 : this is a text.Dispaly text is crisp small sizes "  FontSize="11"  />
+        </StackPanel>
+    </Grid>
+</Window>

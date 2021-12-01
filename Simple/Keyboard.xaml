@@ -1,0 +1,24 @@
+﻿<Window x:Class="Demo.WPFLearning.Simple.Keyboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo.WPFLearning.Simple"
+        mc:Ignorable="d"
+        Title="Keyboard" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel Margin="5">
+            <TextBlock Margin="3"> Type Here</TextBlock>
+            <TextBox Name="Textboxx" PreviewKeyDown="Textboxx_KeyEvent" KeyDown="Textboxx_KeyEvent" PreviewTextInput="Textboxx_TextInput"
+                     PreviewKeyUp="Textboxx_KeyEvent" KeyUp="Textboxx_KeyEvent" TextChanged="Textboxx_TextChanged"></TextBox>
+        </DockPanel>
+        <ListBox Margin="5" Name="listMessage" Grid.Row="1"/>
+        <Button Grid.Row="2" HorizontalAlignment="Right" Margin="5" Padding="3" Name="clear" Click="Clear_Click">Clear List</Button>
+    </Grid>
+</Window>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="Demo.WPFLearning.Simple.MousePosition"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo.WPFLearning.Simple"
+        mc:Ignorable="d"
+        Title="MousePosition" Height="450" Width="400">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Rectangle x:Name="rect" Fill="AliceBlue" MouseMove="Rect_MouseMove"/>
+        <Button Grid.Row="1" Name="cmdCapture" Click="cmdCapture_Click">Capture the Mouse</Button>
+        <TextBlock x:Name="Info" Grid.Row="2"/>
+    </Grid>
+</Window>

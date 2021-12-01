@@ -1,0 +1,27 @@
+﻿<Window x:Class="Demo.WPFLearning.Control.PopupTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo.WPFLearning.Control"
+        mc:Ignorable="d"
+        Title="PopupTest" Height="450" Width="400">
+    <Grid Margin="10">
+        <TextBlock TextWrapping="Wrap">You can use a Popup to provide a link for a specific 
+            <Run TextDecorations="Underline" MouseEnter="Run_MouseEnter"> term </Run> of the interest </TextBlock>
+        
+        
+        <Popup x:Name="popLink" StaysOpen="False" Placement="Mouse" MaxWidth="200" PopupAnimation="Slide"
+               AllowsTransparency="True">
+            <Border BorderBrush="BlueViolet" BorderThickness="2" Background="AliceBlue">
+                <TextBlock Margin="10" TextWrapping="Wrap">
+                    For more information, see 
+                    <Hyperlink NavigateUri="https://www.cnblogs.com/codinghard/" Click="Hyperlink_Click">my blog</Hyperlink>
+                </TextBlock>
+            </Border>
+        </Popup>
+        
+        
+        
+    </Grid>
+</Window>

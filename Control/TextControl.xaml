@@ -1,0 +1,31 @@
+﻿<Window x:Class="Demo.WPFLearning.Control.TextControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo.WPFLearning.Control"
+        mc:Ignorable="d"
+        Title="TextControl" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox MaxLength="50000" Margin="5" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
+                 x:Name="TextBox" SpellCheck.IsEnabled="True"
+                 Text="If you need to stop reading before reaching the end, Word will remember where you stopped-even on another device. The video provides a powerful way to help you prove your point. When you click the online video, you can paste in the embed code of the video you want to add. You can also type in a keyword to search online for the video that best suits your document. To make your documents have a professional appearance, Word provides header, footer, cover, and text box designs, which can complement each other. For example, you can add matching covers, headers, and sidebars. " 
+                 SelectionChanged="TextBox_SelectionChanged"/>
+        <ScrollViewer Foreground="BlueViolet" Grid.Row="1" Margin="5" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBlock Text="Current Selection:"/>
+                <TextBlock x:Name="txtSelect" TextWrapping="Wrap"/>
+            </StackPanel>
+            
+        </ScrollViewer>
+
+        <PasswordBox Grid.Row="2" Height="30" Margin="5" Background="LightYellow">
+            
+        </PasswordBox>
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+﻿<Window x:Class="Demo.WPFLearning.Control.ContentControlWithTitle_2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo.WPFLearning.Control"
+        mc:Ignorable="d"
+        Title="ContentControlWithTitle" Height="450" Width="400">
+    <Grid>
+
+
+        <TabControl Margin="5" Name="TabControl1" TabStripPlacement="Bottom">
+            <TabItem  Name="TabItem1">
+                <TabItem.Header>
+                    <StackPanel>
+                        <TextBlock Margin="3" > Image and Title</TextBlock>
+                        <TextBlock FontFamily="../Assets/Font/#iconfont" Text="&#xe684;"/>
+                    </StackPanel>
+                </TabItem.Header>
+                <StackPanel>
+                    <CheckBox Content="one" Margin="3"/>
+                    <CheckBox Content="two" Margin="3"/>
+                    <CheckBox Content="three" Margin="3"/>
+                    <Button x:Name="Button" Content="Button" Click="Button_Click"></Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="TabItem2" Name="TabItem2">
+                <StackPanel/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

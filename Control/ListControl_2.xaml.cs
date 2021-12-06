@@ -31,5 +31,21 @@ namespace Demo.WPFLearning.Control
             txtSelect.Text = "You choice Item at Position :" + (lst.SelectedIndex + 1) + "\r\n" +
                 "Checked state is " +  ((CheckBox)lst.SelectedItem).IsChecked;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            //对listBox的元素进行遍历
+            foreach (CheckBox item in lst.Items)
+            {
+                if (item.IsChecked == true)
+                {
+                    stringBuilder.Append(item.Content);
+                    stringBuilder.Append("  is checked.");
+                    stringBuilder.Append("\r\n");
+                }
+                txtSelect.Text = stringBuilder.ToString();
+            }
+        }
     }
 }

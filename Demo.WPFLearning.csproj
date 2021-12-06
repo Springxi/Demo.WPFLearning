@@ -73,6 +73,9 @@
     <Compile Include="Control\ControlAndFont.xaml.cs">
       <DependentUpon>ControlAndFont.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Control\DateControl.xaml.cs">
+      <DependentUpon>DateControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Control\ListControl_1.xaml.cs">
       <DependentUpon>ListControl_1.xaml</DependentUpon>
     </Compile>
@@ -81,6 +84,9 @@
     </Compile>
     <Compile Include="Control\PopupTest.xaml.cs">
       <DependentUpon>PopupTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\RangeBasedControl_1.xaml.cs">
+      <DependentUpon>RangeBasedControl_1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Control\SpecialContainerControl.xaml.cs">
       <DependentUpon>SpecialContainerControl.xaml</DependentUpon>
@@ -128,6 +134,10 @@
       <SubType>Designer</SubType>
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
+    <Page Include="Control\DateControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Control\ListControl_1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -139,6 +149,10 @@
     <Page Include="Control\PopupTest.xaml">
       <SubType>Designer</SubType>
       <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Control\RangeBasedControl_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Control\SpecialContainerControl.xaml">
       <SubType>Designer</SubType>

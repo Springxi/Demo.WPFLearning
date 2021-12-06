@@ -19,7 +19,7 @@
         <StackPanel Margin="5" Grid.Row="1">
             <TextBlock> Current Selection</TextBlock>
             <TextBlock Name="txtSelect" TextWrapping="Wrap"></TextBlock>
-            <Button Margin="5">Examine All Items</Button>
+            <Button Margin="5" Name="Button" Click="Button_Click">Examine All Items</Button>
         </StackPanel>
        
     </Grid>

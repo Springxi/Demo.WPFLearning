@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Demo.WPFLearning.Ap.SingleStartUp</StartupObject>
+    <StartupObject>Demo.WPFLearning.App</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
@@ -67,6 +67,12 @@
     <Compile Include="Ap\StartUp.cs" />
     <Compile Include="Ap\Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bindingg\BindNoElementObjects.xaml.cs">
+      <DependentUpon>BindNoElementObjects.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bindingg\ElementBinding.xaml.cs">
+      <DependentUpon>ElementBinding.xaml</DependentUpon>
     </Compile>
     <Compile Include="Control\ContentControl.xaml.cs">
       <DependentUpon>ContentControl.xaml</DependentUpon>
@@ -130,6 +136,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Ap\Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Bindingg\BindNoElementObjects.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Bindingg\ElementBinding.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

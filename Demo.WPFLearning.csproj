@@ -113,6 +113,12 @@
     <Compile Include="Control\TextControl.xaml.cs">
       <DependentUpon>TextControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Resource\Resource.xaml.cs">
+      <DependentUpon>Resource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\ResourceDic.xaml.cs">
+      <DependentUpon>ResourceDic.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Simple\BubbledLabelClick.xaml.cs">
       <DependentUpon>BubbledLabelClick.xaml</DependentUpon>
     </Compile>
@@ -199,6 +205,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Resource\Dictionary1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resource\Dictionary2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resource\Resource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resource\ResourceDic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Simple\BubbledLabelClick.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -270,6 +292,13 @@
     <Content Include="Assets\TestFile\testFile.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Resource\happy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WpfResourceLibrary\WpfResourceLibrary.csproj">
+      <Project>{f2f40a0e-48f6-49b0-b8e5-e7ce202269ec}</Project>
+      <Name>WpfResourceLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

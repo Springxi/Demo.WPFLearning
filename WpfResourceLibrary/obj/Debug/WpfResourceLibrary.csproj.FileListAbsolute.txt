@@ -1,0 +1,13 @@
+D:\VSworkspace\WpfResourceLibrary\bin\Debug\WpfResourceLibrary.dll
+D:\VSworkspace\WpfResourceLibrary\bin\Debug\WpfResourceLibrary.pdb
+D:\VSworkspace\WpfResourceLibrary\obj\Debug\ResourceDictionary1.baml
+D:\VSworkspace\WpfResourceLibrary\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\VSworkspace\WpfResourceLibrary\obj\Debug\WpfResourceLibrary_MarkupCompile.cache
+D:\VSworkspace\WpfResourceLibrary\obj\Debug\WpfResourceLibrary_MarkupCompile.lref
+D:\VSworkspace\WpfResourceLibrary\obj\Debug\Themes\Generic.baml
+D:\VSworkspace\WpfResourceLibrary\obj\Debug\WpfResourceLibrary.g.resources
+D:\VSworkspace\WpfResourceLibrary\obj\Debug\WpfResourceLibrary.Properties.Resources.resources
+D:\VSworkspace\WpfResourceLibrary\obj\Debug\WpfResourceLibrary.csproj.GenerateResource.cache
+D:\VSworkspace\WpfResourceLibrary\obj\Debug\WpfResourceLibrary.csproj.CoreCompileInputs.cache
+D:\VSworkspace\WpfResourceLibrary\obj\Debug\WpfResourceLibrary.dll
+D:\VSworkspace\WpfResourceLibrary\obj\Debug\WpfResourceLibrary.pdb

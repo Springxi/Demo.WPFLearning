@@ -35,9 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Demo.WPFLearning.App</StartupObject>
+    <StartupObject>Demo.WPFLearning.Ap.SingleStartUp</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -58,6 +59,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Ap\Document.xaml.cs">
+      <DependentUpon>Document.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ap\SingleStartUp.cs" />
+    <Compile Include="Ap\SingleWPFApp.cs" />
+    <Compile Include="Ap\StartUp.cs" />
+    <Compile Include="Ap\Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Control\ContentControl.xaml.cs">
       <DependentUpon>ContentControl.xaml</DependentUpon>
     </Compile>
@@ -113,7 +123,16 @@
     <Compile Include="Simple\TunnelKeyPressed.xaml.cs">
       <DependentUpon>TunnelKeyPressed.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Ap\SingleInstanceApplicationWrapper.cs" />
     <Compile Include="Window1.cs" />
+    <Page Include="Ap\Document.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ap\Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Control\ContentControl.xaml">
       <SubType>Designer</SubType>
       <Generator>XamlIntelliSenseFileGenerator</Generator>
@@ -230,6 +249,13 @@
   <ItemGroup>
     <Resource Include="Assets\Image\happy.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <SplashScreen Include="Assets\SplashScreen\photo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\TestFile\testFile.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

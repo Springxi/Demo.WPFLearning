@@ -49,6 +49,14 @@ namespace Demo.WPFLearning
 
         }
 
+        public void LoadFile(string path)
+        {
+            //this.Content = File.ReadAllText(path);
+            this.TextBlock.Text = System.IO.File.ReadAllText(path);
+            this.Title = path;
+        }
+   
+    
     }
 
     

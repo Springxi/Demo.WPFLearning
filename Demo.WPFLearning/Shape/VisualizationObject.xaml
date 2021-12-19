@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Demo.WPFLearning.Shape"
         mc:Ignorable="d"
-        Title="VisualizationObject" Height="350" Width="600">
+        Title="VisualizationObject" Height="350" Width="600" MouseLeftButtonDown="Window_MouseLeftButtonDown" MouseRightButtonDown="Window_MouseRightButtonDown">
     <local:MyPanel x:Name="MyPanel" Loaded="MyPanel_Loaded">
         
     </local:MyPanel>

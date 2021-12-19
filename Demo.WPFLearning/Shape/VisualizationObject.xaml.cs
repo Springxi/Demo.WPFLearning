@@ -26,21 +26,51 @@ namespace Demo.WPFLearning.Shape
 
         private void MyPanel_Loaded(object sender, RoutedEventArgs e)
         {
-            DrawingVisual visual = new DrawingVisual();
-            using (DrawingContext drawingContext = visual.RenderOpen())
+            //DrawingVisual visual = new DrawingVisual();
+            //using (DrawingContext drawingContext = visual.RenderOpen())
+            //{
+            //    Brush brush = Brushes.LightGreen;
+            //    Pen pen = new Pen(Brushes.SteelBlue, 3);
+
+            //    drawingContext.DrawLine(pen, new Point(0, 50), new Point(50, 0));
+            //    drawingContext.DrawLine(pen, new Point(50, 0), new Point(100, 50));
+            //    drawingContext.DrawLine(pen, new Point(0, 50), new Point(100, 50));
+
+            //    drawingContext.DrawRectangle(brush, pen, new Rect(new Point(100, 100), new Size(50, 100)));
+
+            //    drawingContext.DrawEllipse(brush,pen,new Point(300,200),100,60);
+            //}
+            //MyPanel.AddVisual(visual);
+        }
+
+        private void DrawSquare (DrawingVisual visual, Point toLeftCorner)
+        {
+            using(DrawingContext drawingContext = visual.RenderOpen())
             {
                 Brush brush = Brushes.LightGreen;
                 Pen pen = new Pen(Brushes.SteelBlue, 3);
-
-                drawingContext.DrawLine(pen, new Point(0, 50), new Point(50, 0));
-                drawingContext.DrawLine(pen, new Point(50, 0), new Point(100, 50));
-                drawingContext.DrawLine(pen, new Point(0, 50), new Point(100, 50));
-
-                drawingContext.DrawRectangle(brush, pen, new Rect(new Point(100, 100), new Size(50, 100)));
-
-                drawingContext.DrawEllipse(brush,pen,new Point(300,200),100,60);
+                drawingContext.DrawRectangle(brush, pen, new Rect(toLeftCorner, new Size(40, 40)));
             }
+            //drawingContext.Close();
+        }
+
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Point point = e.GetPosition(MyPanel);
+            DrawingVisual visual = new DrawingVisual();
+            DrawSquare(visual, point);
             MyPanel.AddVisual(visual);
+
+        }
+
+        private void Window_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Point point = e.GetPosition(MyPanel);
+            DrawingVisual visual = MyPanel.GetVisual(point);
+            if (visual != null)
+            {
+                MyPanel.DelectVisual(visual);
+            }
         }
     }
 }

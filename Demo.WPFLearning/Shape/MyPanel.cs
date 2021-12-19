@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
@@ -26,5 +27,20 @@ namespace Demo.WPFLearning.Shape
             base.AddVisualChild(visual);
 
         }
+
+        public void DelectVisual(Visual visual)
+        {
+            visuals.Remove(visual);
+            base.RemoveLogicalChild(visual);
+            base.RemoveVisualChild(visual);
+
+        }
+        //找到单机的时的位置
+        public DrawingVisual GetVisual(Point point)
+        {
+            HitTestResult hitTestResult = VisualTreeHelper.HitTest(this, point);
+            return hitTestResult != null ? hitTestResult.VisualHit as DrawingVisual :null;
+        }
+
     }
 }

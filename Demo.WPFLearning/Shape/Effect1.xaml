@@ -1,0 +1,48 @@
+﻿<Window x:Class="Demo.WPFLearning.Shape.Effect1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo.WPFLearning.Shape"
+        mc:Ignorable="d"
+        Title="Effect1" Height="550" Width="400">
+    <StackPanel>
+        <Button Padding="5" Margin="3" Content="Blurred(Redius=2)">
+            <Button.Effect>
+                <BlurEffect Radius="2"/>
+            </Button.Effect>
+        </Button>
+
+        <Button Padding="5" Margin="3" Content="Blurred(Redius=5)">
+            <Button.Effect>
+                <BlurEffect Radius="5"/>
+            </Button.Effect>
+        </Button>
+        <TextBlock FontSize="20" Margin="5" Text="Basic Dropshadow">
+            <TextBlock.Effect>
+                <DropShadowEffect></DropShadowEffect>
+            </TextBlock.Effect>
+        </TextBlock>
+        
+        <TextBlock FontSize="20" Margin="5" Text="Blue Dropshadow">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Blue" Direction="90"/>  <!--设置阴影的颜色和阴影出现的方向，逆时针旋转-->
+                
+            </TextBlock.Effect>
+        </TextBlock>
+
+        <TextBlock FontSize="20" Margin="5" Text="Blurred Dropshadow">
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="15"/>  <!--模糊阴影-->
+            </TextBlock.Effect>
+        </TextBlock>
+
+        <TextBlock FontSize="20" Margin="5" Text="ShadowDepth Dropshadow">
+            <TextBlock.Effect>
+                <DropShadowEffect ShadowDepth="10" Opacity="0.7"/>
+                <!--内容和阴影距离,透明程度-->
+            </TextBlock.Effect>
+        </TextBlock>
+
+    </StackPanel>
+</Window>

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{766E55E4-C40E-489D-88D3-FBAB433B3A67}</ProjectGuid>
+    <ProjectGuid>{216B1BB8-566F-416D-8CEF-F5C09CBB31B2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Demo.WPFLearning</RootNamespace>
     <AssemblyName>Demo.WPFLearning</AssemblyName>
@@ -59,9 +59,115 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Program.cs" />
+    <Compile Include="Resource\Resource.xaml.cs">
+      <DependentUpon>Resource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\ResourceDic.xaml.cs">
+      <DependentUpon>ResourceDic.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Shape\Transformation.xaml.cs">
+      <DependentUpon>Transformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Simple\BubbledLabelClick.xaml.cs">
+      <DependentUpon>BubbledLabelClick.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Simple\Keyboard.xaml.cs">
+      <DependentUpon>Keyboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Simple\MouseDragAndDrop.xaml.cs">
+      <DependentUpon>MouseDragAndDrop.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Simple\MousePosition.xaml.cs">
+      <DependentUpon>MousePosition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Simple\TunnelKeyPressed.xaml.cs">
+      <DependentUpon>TunnelKeyPressed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Style\SimpleStyle1.xaml.cs">
+      <DependentUpon>SimpleStyle1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window1.cs" />
+    <Page Include="Ap\Document.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Ap\Window1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Bindingg\BindNoElementObjects.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Bindingg\ElementBinding.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\ContentControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\ContentControlWithTitle_1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\ContentControlWithTitle_2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\ContentControlWithTitle_3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\ControlAndFont.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\DateControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\ListControl_1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\ListControl_2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\PopupTest.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\RangeBasedControl_1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\SpecialContainerControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\SpecialContainerControl_1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\TextControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Ap\Document.xaml.cs">
       <DependentUpon>Document.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Ap\SingleInstanceApplicationWrapper.cs" />
     <Compile Include="Ap\SingleStartUp.cs" />
     <Compile Include="Ap\SingleWPFApp.cs" />
     <Compile Include="Ap\StartUp.cs" />
@@ -77,14 +183,14 @@
     <Compile Include="Control\ContentControl.xaml.cs">
       <DependentUpon>ContentControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Control\ContentControlWithTitle_1.xaml.cs">
+      <DependentUpon>ContentControlWithTitle_1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Control\ContentControlWithTitle_2.xaml.cs">
       <DependentUpon>ContentControlWithTitle_2.xaml</DependentUpon>
     </Compile>
     <Compile Include="Control\ContentControlWithTitle_3.xaml.cs">
       <DependentUpon>ContentControlWithTitle_3.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Control\ContentControlWithTitle_1.xaml.cs">
-      <DependentUpon>ContentControlWithTitle_1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Control\ControlAndFont.xaml.cs">
       <DependentUpon>ControlAndFont.xaml</DependentUpon>
@@ -113,165 +219,57 @@
     <Compile Include="Control\TextControl.xaml.cs">
       <DependentUpon>TextControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Resource\Resource.xaml.cs">
-      <DependentUpon>Resource.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Resource\ResourceDic.xaml.cs">
-      <DependentUpon>ResourceDic.xaml</DependentUpon>
-    </Compile>
-<<<<<<< HEAD:Demo.WPFLearning/Demo.WPFLearning.csproj
-    <Compile Include="Shape\Transformation.xaml.cs">
-      <DependentUpon>Transformation.xaml</DependentUpon>
-    </Compile>
-=======
->>>>>>> 31c8bfc9814a9b48cc00327159513daea82cf84b:Demo.WPFLearning.csproj
-    <Compile Include="Simple\BubbledLabelClick.xaml.cs">
-      <DependentUpon>BubbledLabelClick.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Simple\Keyboard.xaml.cs">
-      <DependentUpon>Keyboard.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Simple\MouseDragAndDrop.xaml.cs">
-      <DependentUpon>MouseDragAndDrop.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Simple\MousePosition.xaml.cs">
-      <DependentUpon>MousePosition.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Simple\TunnelKeyPressed.xaml.cs">
-      <DependentUpon>TunnelKeyPressed.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Ap\SingleInstanceApplicationWrapper.cs" />
-    <Compile Include="Style\SimpleStyle1.xaml.cs">
-      <DependentUpon>SimpleStyle1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Window1.cs" />
-    <Page Include="Ap\Document.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Ap\Window1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Bindingg\BindNoElementObjects.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Bindingg\ElementBinding.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Control\ContentControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>XamlIntelliSenseFileGenerator</Generator>
-    </Page>
-    <Page Include="Control\ContentControlWithTitle_2.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Control\ContentControlWithTitle_3.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Control\ContentControlWithTitle_1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Control\ControlAndFont.xaml">
-      <SubType>Designer</SubType>
-      <Generator>XamlIntelliSenseFileGenerator</Generator>
-    </Page>
-    <Page Include="Control\DateControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Control\ListControl_1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Control\ListControl_2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Control\PopupTest.xaml">
-      <SubType>Designer</SubType>
-      <Generator>XamlIntelliSenseFileGenerator</Generator>
-    </Page>
-    <Page Include="Control\RangeBasedControl_1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Control\SpecialContainerControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>XamlIntelliSenseFileGenerator</Generator>
-    </Page>
-    <Page Include="Control\SpecialContainerControl_1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>XamlIntelliSenseFileGenerator</Generator>
-    </Page>
-    <Page Include="Control\TextControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Resource\Dictionary1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Resource\Dictionary2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Resource\Resource.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Resource\ResourceDic.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-<<<<<<< HEAD:Demo.WPFLearning/Demo.WPFLearning.csproj
-    <Page Include="Shape\Transformation.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-=======
->>>>>>> 31c8bfc9814a9b48cc00327159513daea82cf84b:Demo.WPFLearning.csproj
-    <Page Include="Simple\BubbledLabelClick.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Simple\Keyboard.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Resource\Dictionary1.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resource\Dictionary2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resource\Resource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resource\ResourceDic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Shape\Transformation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Simple\BubbledLabelClick.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Simple\Keyboard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Simple\MouseDragAndDrop.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Simple\MousePosition.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Simple\TunnelKeyPressed.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Style\SimpleStyle1.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="window2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -304,22 +302,16 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\Image\happy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <SplashScreen Include="Assets\SplashScreen\photo.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Assets\TestFile\testFile.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Resource Include="Assets\SplashScreen\photo.jpeg" />
+    <Resource Include="Assets\TestFile\testFile.txt" />
     <Resource Include="Resource\happy.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WpfResourceLibrary\WpfResourceLibrary.csproj">
       <Project>{f2f40a0e-48f6-49b0-b8e5-e7ce202269ec}</Project>
       <Name>WpfResourceLibrary</Name>
+      <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

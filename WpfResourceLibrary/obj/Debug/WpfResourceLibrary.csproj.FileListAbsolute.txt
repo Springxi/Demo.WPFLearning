@@ -11,3 +11,16 @@ D:\VSworkspace\WpfResourceLibrary\obj\Debug\WpfResourceLibrary.csproj.GenerateRe
 D:\VSworkspace\WpfResourceLibrary\obj\Debug\WpfResourceLibrary.csproj.CoreCompileInputs.cache
 D:\VSworkspace\WpfResourceLibrary\obj\Debug\WpfResourceLibrary.dll
 D:\VSworkspace\WpfResourceLibrary\obj\Debug\WpfResourceLibrary.pdb
+D:\VSworkspace\Demo.WPFLearning\WpfResourceLibrary\bin\Debug\WpfResourceLibrary.dll
+D:\VSworkspace\Demo.WPFLearning\WpfResourceLibrary\bin\Debug\WpfResourceLibrary.pdb
+D:\VSworkspace\Demo.WPFLearning\WpfResourceLibrary\obj\Debug\ResourceDictionary1.baml
+D:\VSworkspace\Demo.WPFLearning\WpfResourceLibrary\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\VSworkspace\Demo.WPFLearning\WpfResourceLibrary\obj\Debug\WpfResourceLibrary_MarkupCompile.cache
+D:\VSworkspace\Demo.WPFLearning\WpfResourceLibrary\obj\Debug\WpfResourceLibrary_MarkupCompile.lref
+D:\VSworkspace\Demo.WPFLearning\WpfResourceLibrary\obj\Debug\Themes\Generic.baml
+D:\VSworkspace\Demo.WPFLearning\WpfResourceLibrary\obj\Debug\WpfResourceLibrary.g.resources
+D:\VSworkspace\Demo.WPFLearning\WpfResourceLibrary\obj\Debug\WpfResourceLibrary.Properties.Resources.resources
+D:\VSworkspace\Demo.WPFLearning\WpfResourceLibrary\obj\Debug\WpfResourceLibrary.csproj.GenerateResource.cache
+D:\VSworkspace\Demo.WPFLearning\WpfResourceLibrary\obj\Debug\WpfResourceLibrary.csproj.CoreCompileInputs.cache
+D:\VSworkspace\Demo.WPFLearning\WpfResourceLibrary\obj\Debug\WpfResourceLibrary.dll
+D:\VSworkspace\Demo.WPFLearning\WpfResourceLibrary\obj\Debug\WpfResourceLibrary.pdb

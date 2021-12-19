@@ -55,10 +55,10 @@ namespace Demo.WPFLearning
             this.TextBlock.Text = System.IO.File.ReadAllText(path);
             this.Title = path;
         }
-   
-    
+
+
     }
 
-    
+
 
 }

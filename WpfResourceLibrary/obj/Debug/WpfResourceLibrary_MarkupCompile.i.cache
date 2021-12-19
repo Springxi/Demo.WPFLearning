@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\VSworkspace\WpfResourceLibrary\obj\Debug\
+D:\VSworkspace\Demo.WPFLearning\WpfResourceLibrary\obj\Debug\
 WpfResourceLibrary
 none
 false
@@ -16,5 +16,5 @@ DEBUG;TRACE
 13-1505183044
 ResourceDictionary1.xaml;Themes\Generic.xaml;
 
-True
+False
 

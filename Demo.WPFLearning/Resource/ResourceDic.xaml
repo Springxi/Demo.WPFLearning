@@ -18,9 +18,7 @@
                     Background="{DynamicResource TileBrush3}"/>
 
             <!--使用类库——资源项目资源： 窗体加载创建资源对象-->
-            <!--方式1在代码中定义-->
             <Button x:Name="Button4" Margin="5" Padding="5" Content="Button"/>
-            <!--方式2直接引用： 在资源库中的 \Themes\Generic.xaml 中对资源进行声明-->
             <Button x:Name="Button5" Margin="5" Padding="5" Content="Button"
                     Background="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type res:CustomControl1},ResourceId=SadTileBrush}}"/>
         

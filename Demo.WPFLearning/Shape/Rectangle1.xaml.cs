@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Demo.WPFLearning.Shape
 {
     /// <summary>
-    /// Transformation.xaml 的交互逻辑
+    /// Rectangle1.xaml 的交互逻辑
     /// </summary>
-    public partial class Transformation : Window
+    public partial class Rectangle1 : Window
     {
-        public Transformation()
+        public Rectangle1()
         {
             InitializeComponent();
         }

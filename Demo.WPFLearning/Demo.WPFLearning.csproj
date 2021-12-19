@@ -119,9 +119,12 @@
     <Compile Include="Resource\ResourceDic.xaml.cs">
       <DependentUpon>ResourceDic.xaml</DependentUpon>
     </Compile>
+<<<<<<< HEAD:Demo.WPFLearning/Demo.WPFLearning.csproj
     <Compile Include="Shape\Transformation.xaml.cs">
       <DependentUpon>Transformation.xaml</DependentUpon>
     </Compile>
+=======
+>>>>>>> 31c8bfc9814a9b48cc00327159513daea82cf84b:Demo.WPFLearning.csproj
     <Compile Include="Simple\BubbledLabelClick.xaml.cs">
       <DependentUpon>BubbledLabelClick.xaml</DependentUpon>
     </Compile>
@@ -227,10 +230,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+<<<<<<< HEAD:Demo.WPFLearning/Demo.WPFLearning.csproj
     <Page Include="Shape\Transformation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+=======
+>>>>>>> 31c8bfc9814a9b48cc00327159513daea82cf84b:Demo.WPFLearning.csproj
     <Page Include="Simple\BubbledLabelClick.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
